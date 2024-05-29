@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5rem;
+  padding: 2.5rem;
+}
+
+h1::first-letter {
+  font-size: 6.4rem;
+}
+h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.8rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 0.6rem;
+}
+
+figure img {
+  width: 32rem;
+}
+
+figcaption {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-left: 3.2rem;
+}
+
+a:hover {
+  color: #0588c4;
+}
+a {
+  color: #c44105;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-decoration: double;
+  text-decoration-line: underline;
+  margin-bottom: 2.4rem;
+  display: inline-block;
+}
+
+ul {
+  margin-bottom: 2.4rem;
+  margin-left: 2.4rem;
+}
+
+li {
+  color: #035276;
+  font-style: italic;
+  margin-bottom: 0.6rem;
+}
+
+.realce-h1 {
+  color: #0588c4;
+}
+
+.realce-p,
+p strong {
+  color: #0588c4;
+  font-weight: 700;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 6.1rem;
+}
+
+.container-informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.secao-condicoes .realce-italico {
+  color: #78d4ff;
+  font-style: italic;
+}
+
+.realce-underline {
+  color: #78d4ff;
+  text-decoration: underline;
+}
+.realce-italico {
+  color: #78d4ff;
+}
+
+.condicoes {
+  display: flex;
+  flex-flow: column;
+  background-color: #035276;
+  color: #fff;
+  box-shadow: 0 0 1.6rem 0.4rem rgba(0, 0, 0, 0.15);
+  padding: 2.4rem 3.2rem;
+  border-radius: 2rem;
+}
+
+.img-watsapps {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 8.5rem;
+}

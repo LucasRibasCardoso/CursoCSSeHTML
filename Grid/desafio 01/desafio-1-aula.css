@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5rem;
+  padding: 2.5rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.8rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+figcaption {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-left: 3.2rem;
+}
+
+a:hover {
+  color: #0588c4;
+}
+a {
+  color: #c44105;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-decoration: double;
+  text-decoration-line: underline;
+  display: inline-block;
+}
+
+ul {
+  margin-bottom: 2.4rem;
+  margin-left: 2.4rem;
+}
+
+li {
+  color: #035276;
+  font-style: italic;
+  margin-bottom: 0.6rem;
+}
+
+.realce-p,
+p strong {
+  color: #0588c4;
+  font-weight: 700;
+}
+
+.realce-underline {
+  color: #78d4ff;
+  text-decoration: underline;
+}
+.realce-italico {
+  color: #78d4ff;
+}
+
+section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, max-content);
+  column-gap: 3rem;
+  row-gap: 4rem;
+  align-content: center;
+  justify-items: center;
+  grid-template-areas:
+    "titulo titulo"
+    "a b"
+    "a c"
+    "a d";
+
+  & h1 {
+    grid-area: titulo;
+    font-size: 4.5rem;
+    line-height: 1;
+
+    & .realce-h1 {
+      color: #0588c4;
+    }
+
+    &::first-letter {
+      font-size: 6.4rem;
+    }
+  }
+
+  & figure {
+    grid-area: a;
+
+    & img {
+      width: 32rem;
+    }
+  }
+
+  & .precos {
+    grid-area: b;
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    gap: 2rem;
+  }
+
+  & .condicoes {
+    grid-area: c;
+    display: flex;
+    gap: 2rem;
+    flex-flow: column;
+    background-color: #035276;
+    color: #fff;
+    box-shadow: 0 0 1.6rem 0.4rem rgba(0, 0, 0, 0.15);
+    padding: 2.4rem 3.2rem;
+    border-radius: 2rem;
+
+    & .realce-italico {
+      color: #78d4ff;
+      font-style: italic;
+    }
+  }
+
+  & a {
+    grid-area: d;
+  }
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  row-gap: 3.5rem;
+  column-gap: 4rem;
+  justify-items: center;
+
+  & h2 {
+    grid-column: 1/4;
+    justify-self: center;
+  }
+}
+
+.img-watsapps {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 8.5rem;
+}

@@ -1,0 +1,19 @@
+.p1 p {
+    /*MARGIN: É utilizado para adicionar margens 
+    na parte externa do elemento. Ele segue o sentido horário, começando em cima. 
+    Cima, Direita, Baixo e Esquerda */
+    margin: 20px 30px 20px 30px;
+}
+
+.p2 p{
+    background-color: aqua;
+    padding: 20px 50px 20px 50px;
+}
+
+.p3 p {
+    background-color:cadetblue;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+}

@@ -1,0 +1,8 @@
+Todas as tags em HTML exibidas na página final deverão ser retratadas da forma correta, 
+isto é, como um código.
+
+Lembre de como criamos contextos de navegação para referenciar o site da Wikipedia.
+
+Substitua os parágrafos utilizados para retratar o formulário pelo formulário em si.
+
+Finalize a página usando a forma adequada de retratar informações de contato.

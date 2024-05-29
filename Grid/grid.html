@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+  </head>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    * html {
+      font-size: 62.5%;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .grid {
+      width: 50rem;
+      height: 50rem;
+      display: grid;
+      grid-template-rows: repeat(3, 10rem);
+      grid-template-columns: repeat(3, 10rem);
+      gap: 1rem;
+      align-content: center;
+      justify-content: center;
+      border: solid 3px black;
+      grid-template-areas:
+        "a a a"
+        "b b c"
+        "d d c";
+
+      & div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        font-size: 2.4rem;
+      }
+      & .div1 {
+        background-color: aqua;
+        grid-area: a;
+      }
+      & .div2 {
+        background-color: green;
+        grid-area: b;
+      }
+      & .div3 {
+        background-color: yellow;
+        grid-area: c;
+      }
+      & .div4 {
+        background-color: red;
+        grid-area: d;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="grid">
+      <div class="div1">a</div>
+      <div class="div2">b</div>
+      <div class="div3">c</div>
+      <div class="div4">d</div>
+    </div>
+  </body>
+</html>

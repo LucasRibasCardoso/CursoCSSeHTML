@@ -1,0 +1,32 @@
+/* Padrao */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4rem;
+  color: #404040;
+}
+
+/* Trnasicoes */
+p {
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin: 5rem;
+  transition-property: transform;
+  transition-duration: 5s;
+  transition-timing-function: ease;
+  transition-delay: 1s;
+
+  &:hover {
+    transform: translateX(1400px);
+  }
+}

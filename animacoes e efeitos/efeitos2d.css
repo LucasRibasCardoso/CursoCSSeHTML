@@ -1,0 +1,53 @@
+/* Padrao */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4rem;
+  color: #404040;
+}
+
+div {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  background-color: aquamarine;
+  text-align: center;
+}
+
+.div1 {
+  &:hover {
+    transition: transform 1s;
+    transform: translate(10rem, 5rem);
+  }
+}
+.div2 {
+  transition: transform 1s;
+  &:hover {
+    transform: rotate(45deg);
+  }
+}
+.div3 {
+  transition: transform 1s;
+  &:hover {
+    transform: scale(1.5, 2);
+  }
+}
+.div4 {
+  transition: transform 1s;
+  &:hover {
+    transform: skew(30deg);
+  }
+}

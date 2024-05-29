@@ -1,0 +1,41 @@
+div {
+    background-color: aquamarine;
+    padding: 10px;
+    width: 50vw;
+    height: 100vh;
+    font-size: 20px;
+}
+
+html {
+    /* font-size: 20px; medida fixa em pixels*/ 
+    font-size: 62.5%; /* medida relativa em relaçao ao fontsize padrao do navegador*/
+}
+
+div p {
+    font-size: 2em;
+}
+
+section {
+    font-size: 2rem;
+}
+
+h1 {
+    /* 20px */
+
+    font-size: 2rem;
+}
+
+p {
+    /* 16px */
+    font-size: 1.6rem;
+}
+/* Dimensões *\
+
+/* vh - viewport height - percentual da altura da tela*/
+/* vw - viewport width - percentual da largura da tela*/
+/* em - multiplicador do fontsize do elemento "pai" */
+/* rem - multiplicador do fontsize do elemento "pai de todos" (HTML)
+    exemplo: o fontsize padrao do HTMl é 16px entao 2rem é equivalente a 32px*/
+
+/* 1rem = 10px */
+/* 1.6rem = 16px */

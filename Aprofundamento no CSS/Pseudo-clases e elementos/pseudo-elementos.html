@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudos Elementos</title>
+  </head>
+  <body>
+    <style>
+      p::first-letter {
+        font-size: 45px;
+      }
+      p::first-line {
+        color: brown;
+      }
+      p::after {
+        content: "Textinho vai ser inserido após o parágrafo";
+        color: blue;
+        font-weight: 700;
+      }
+    </style>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at vehicula
+      ex, ac suscipit lectus. Proin pharetra consectetur nisl ut lacinia. Ut
+      tincidunt rhoncus elit ut vulputate. Ut pulvinar, mi ac pretium iaculis,
+      quam neque porta nulla, sed bibendum nulla arcu sed dolor. Etiam quis
+      mauris at lacus tristique dictum vel et ligula. Aenean scelerisque ligula
+      massa. Donec eget hendrerit felis.
+    </p>
+  </body>
+</html>
